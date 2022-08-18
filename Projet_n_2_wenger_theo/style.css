@@ -1,0 +1,1133 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Raleway", "Sans serif";
+    overflow-x: hidden;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+/*Debut du header*/
+.booki {
+    width: 70%;
+}
+
+.enTete {
+    margin-bottom: 50px;
+}
+
+.conteneur {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menuLink {
+    margin: 0.5%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+/*navigation hebergements activités*/
+.interlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    border-top: 4px transparent solid;
+}
+
+.interlink a {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.interlink :visited {
+    color: black;
+}
+
+.interlink :hover {
+    position: relative;
+    bottom: 19px;
+    margin-top: 0px;
+    padding-top: 33px;
+    border-top: 4px #0065FC solid;
+    text-align: center;
+    color: #0065FC;
+}
+
+/*barre de recherche marseille*/
+
+.nature {
+    margin-bottom: 3%;
+}
+
+.fa-location-dot {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    padding: 16px;
+    width: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search {
+    position: relative;
+    right: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px #F2F2F2 solid;
+}
+
+.buttonSearch {
+    position: relative;
+    right: 8px;
+    font-size: 1.2em;
+    padding: 15px;
+    border: 1px #0065FC solid;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+button .fa-magnifying-glass {
+    display: none;
+}
+
+/*Reglage des filtres*/
+
+.filter {
+    margin-top: 3%;
+}
+
+.fa-money-bill-wave,
+.fa-child-reaching,
+.fa-heart,
+.fa-dog {
+    position: relative;
+    right: 9px;
+    top: -3px;
+    padding: 17px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.fa-child-reaching {
+    width: 18px;
+}
+
+.buttonFilter {
+    background-color: white;
+    border: 2px #d9d9d9 solid;
+    border-radius: 35px 35px 35px 35px;
+    height: 55px;
+    padding-right: 1%;
+    padding-left: 0%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: raleway;
+}
+
+.buttonFilter span {
+    position: relative;
+    bottom: 3%;
+    font-weight: bolder;
+
+}
+
+.buttonFilter:hover i {
+    transition: 500ms ease-in-out;
+    transform: scale(1.050) rotate(-720deg);
+}
+
+.buttonFilter:active i {
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
+.buttonFilter:hover {
+    transition: 500ms ease-in-out;
+}
+
+.fa-info {
+    position: relative;
+    top: 8px;
+    padding: 8px;
+    margin-right: 15px;
+    border: 1px lightgrey solid;
+    border-radius: 50% 50% 50% 50%;
+    width: 1%;
+    height: 1%;
+    line-height: 60%;
+    text-align: center;
+    color: #0065FC;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+}
+
+/*Location classiques*/
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+}
+
+.mainLocation {
+    background-color: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    max-width: 63%;
+    min-width: 40%;
+}
+
+.containLocation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+/*les boites de chaque location*/
+.boxLocation {
+    width: 29%;
+    height: 225px;
+    background-color: white;
+    border: 2px whitesmoke solid;
+    padding: 0.2%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 15px 15px 15px 15px;
+    line-height: 1em;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.boxLocation h3 {
+    padding-left: 5px;
+}
+.boxLocation p {
+    position: relative;
+    bottom: 4px;
+    padding-left: 5px;
+}
+
+.boxLocation i {
+    position: relative;
+    bottom: 0px;
+
+    
+}
+
+.containLocation :hover {
+    box-shadow: 4px 4px 5px lightgray;
+}
+
+.boxLocation :hover {
+    box-shadow: none;
+}
+
+.imgLocation {
+    width: 100%;
+    height: 55%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+/*Les locations populaires*/
+.containerPopularLocation {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 28%;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.containerPopularLocation span {
+    position: relative;
+    top: 15px;
+}
+.location-title {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 4%;
+}
+
+.boxPopularLocation {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.popularLocation :hover {
+    box-shadow: 4px 4px 5px lightgray;
+}
+
+.boxPopularLocation :hover {
+    box-shadow: none;
+}
+
+.imgPopularLocation {
+    width: 170px;
+    height: 185px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+.infoPopularLocation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+
+.infoPopularLocation p {
+    position: relative;
+    bottom: 15px;
+}
+
+/*Les activitées*/
+.activity {
+    margin-top: 50px;
+}
+
+.boxActivity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxMiniActivity {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.miniActivity {
+
+    padding-bottom: 2%;
+    border: 0px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.miniActivity--little {
+    padding-bottom: 2%;
+    border: 0px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.miniActivity--little img {
+    height: 80px;
+    object-position: top;
+}
+
+.miniActivity--little h3 {
+    padding-left: 5%;
+}
+
+.miniActivity img {
+    height: 120px;
+    width: 100%;
+}
+
+
+.miniActivity h3 {
+    padding-left: 5%;
+}
+
+.boxMaxiActivity {
+    width: 22%;
+    border: 0px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.boxMaxiActivity h3 {
+    padding-left: 5%;
+}
+
+.imgActivity {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+
+}
+
+.imgMaxActivity {
+    width: 100%;
+    height: 457px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+/*Les 3 types d'etoiles/star*/
+.fa-star {
+    color: #0065FC;
+}
+
+b .fa-star {
+    color: lightgray;
+}
+
+span .fa-star {
+    color: black;
+}
+
+/*Le pied de page*/
+.bottomPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    bottom: 0px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 0%;
+    background-color: #F2F2F2;
+}
+.bottom__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.propos {
+    position: relative;
+    left: 6%;
+    margin-right: 10%;
+}
+
+/*Reglage pour desktop 992*/
+@media (min-width: 991px) {
+
+
+    .booki {
+        width: 50%;
+    }
+
+    .filter {
+        font-size: 0.8em;
+    }
+
+    .titre {
+        font-size: 0.8em;
+    }
+
+    .localisation {
+        margin-top: 3%;
+    }
+
+    .filter {
+        margin-top: 0%;
+    }
+
+    .filter strong {
+        position: relative;
+        font-weight: bold;
+        top: 45px;
+    }
+
+    .buttonFilter {
+        position: relative;
+        left: 50px;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-right: 0%;
+        padding-right: 1.5%;
+        font-size: 0.9rem;
+    }
+
+    .buttonFilter span {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .fa-money-bill-wave,
+    .fa-child-reaching,
+    .fa-heart,
+    .fa-dog {
+        position: relative;
+        bottom: 10px;
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+
+    .information {
+        font-size: 0.9em;
+    }
+
+    .mainLocation h2 {
+        font-size: 1em;
+    }
+
+    .mainLocation {
+        padding-top: 2%;
+        padding: 20px;
+    }
+
+    .containerPopularLocation h2 {
+        font-size: 1em;
+    }
+
+    .containerPopularLocation {
+        padding-top: 2%;
+    }
+
+    .containLocation {
+        align-items: flex-start;
+    }
+
+    .boxLocation {
+        font-size: 0.63em;
+        width: 29%;
+        height: 130px;
+        line-height: 0.7em;
+    }
+
+    .boxLocation h3 {
+        margin-left: 5%;
+    }
+
+    .boxLocation p {
+        margin-left: 5%;
+    }
+
+    .imgLocation {
+        width: 100%;
+        height: 62%;
+    }
+
+    span .fa-star {
+        position: relative;
+        right: 0px;
+    }
+
+    .afficher {
+        font-size: 0.8em;
+    }
+
+    .boxPopularLocation {
+        font-size: 0.72em;
+        height: 90px;
+        padding-bottom: 10px;
+        margin-bottom: 8%;
+        line-height: 1em;
+    }
+
+    div.imgPopularLocation {
+        width: 45%;
+    }
+
+    .imgPopularLocation {
+        width: 90%;
+        height: 104%;
+        margin-right: 2%;
+    }
+
+    .infoPopularLocation {
+        font-size: 0.9em;
+    }
+
+    .infoPopularLocation p {
+        position: relative;
+        bottom: 15px;
+    }
+
+    .activity h2 {
+        font-size: 1em;
+    }
+
+    .boxActivity {
+        font-size: 0.6em;
+    }
+
+    .imgActivity {
+        height: 100px;
+    }
+
+    .imgMaxActivity {
+        height: 260px;
+    }
+
+    .bottomPage {
+        font-size: 0.7em;
+    }
+}
+
+/*reglage pour telephone*/
+/*Format Iphone 8*/
+@media (min-width: 280px) and (max-width: 767px) {
+    * {
+        font-size: 90%;
+    }
+
+    a {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    /*On modifie la taille et l'emplacement de l'image BOOKI*/
+    .booki {
+        margin-bottom: 30px;
+        position: relative;
+        left: 35%;
+        top: 10px;
+        width: 50%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1%;
+        padding-bottom: 1%;
+    }
+
+    .interlink {
+        position: relative;
+        display: flex;
+        width: 107%;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        border-bottom: 4px #F2F2F2 solid;
+        font-size: 0.9em;
+    }
+    .interlink a {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    .interlink :hover {
+        position: relative;
+        bottom: 0%;
+        padding-top: 0px;
+        border-top: none;
+        padding-bottom: 20px;
+        margin-bottom: -24px;
+        border-bottom: 4px #0065FC solid;
+        text-align: center;
+        color: #0065FC;
+    }
+
+    /*On aggrandit la phrase d'accroche*/
+    .titre {
+        font-size: 1.4em;
+    }
+
+    .titre h1 {
+        font-size: 1.5em;
+    }
+
+    .titre p {
+        font-size: 1.1em;
+    }
+
+    /*On aligne le formulaire de recherche*/
+    form {
+        margin: 15%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        position: relative;
+        right: 15%;
+        width: 110%;
+        font-size: 1.2em;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    /*On transforme le texte en loupe*/
+    button .fa-magnifying-glass {
+        display: inherit;
+        font-size: 150%;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    /*On modifie le boutton loupe*/
+    .buttonSearch {
+        position: relative;
+        right: 20px;
+        font-size: 1em;
+        border-radius: 15px 15px 15px 15px;
+        padding: 15px;
+    }
+
+    /*On modifie les filtres*/
+    .filter {
+        width: 100%;
+    }
+
+    .filter p {
+        font-weight: bold;
+    }
+
+    .filter h2 {
+        font-size: 1.8em;
+    }
+
+    .filter strong {
+        margin-right: 0%;
+        font-weight: bold;
+    }
+
+    .buttonFilter {
+        height: 53px;
+        margin: 10px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .buttonFilter span {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .fa-money-bill-wave,
+    .fa-child-reaching,
+    .fa-heart,
+    .fa-dog {
+        font-size: 0.9em;
+    }
+
+    .fa-info {
+        padding: 8px;
+        margin-right: 15px;
+        border: 1px lightgrey solid;
+        border-radius: 50% 50% 50% 50%;
+        width: 10px;
+        height: 10px;
+        line-height: 60%;
+        text-align: center;
+        color: #0065FC;
+    }
+
+    /*On fixe la taille de l'information*/
+    .information {
+        font-size: 1.2em;
+    }
+
+    .location h2 {
+        font-size: 2.9em;
+    }
+
+    /*On fait passer Populaires en premier*/
+    .location {
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+
+    .containLocation {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .mainLocation {
+        background-color: white;
+        width: 96.5%;
+        max-width: 100%;
+        padding-top: 5%;
+    }
+
+    .mainLocation h2 {
+        margin-left: 1%;
+        font-size: 2.3em;
+    }
+
+    .mainLocation h3 {
+        font-size: 1.2em;
+    }
+
+    .boxLocation {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .imgLocation {
+        height: 100px;
+    }
+
+    .containerPopularLocation {
+        width: 112.5%;
+        position: relative;
+        right: 8%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 0px;
+    }
+
+    .containerPopularLocation h2 {
+
+        font-size: 3em;
+    }
+
+    .containerPopularLocation h3 {
+        font-size: 1.2em;
+    }
+
+    span .fa-star {
+        position: relative;
+        right: 8%;
+        top: 4px;
+        font-size: 3em;
+    }
+
+    .boxPopularLocation {
+        height: 130px;
+        margin-right: 5%;
+        margin-bottom: 12px;
+        padding-bottom: 2%;
+    }
+
+    div.imgPopularLocation {
+        width: 40%;
+    }
+
+    .imgPopularLocation {
+        width: 100%;
+        height: 130px;
+    }
+
+    .infoPopularLocation {
+        margin-left: 5%;
+    }
+
+    .afficher {
+        font-size: 1.6em;
+    }
+
+    /*On modifie la taille du titre activité*/
+    .activity h2 {
+        font-size: 2.2em;
+    }
+
+    .activity h3 {
+        font-size: 0.8em;
+    }
+
+    .activity {
+        margin-top: 30px;
+    }
+
+    /*On regle les activités en column*/
+    .boxActivity {
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    .boxMaxiActivity {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .boxMiniActivity {
+        width: 100%;
+
+    }
+    .miniActivity--little {
+        margin-bottom: 20px;
+    }
+    
+    .miniActivity--little img {
+        height: 120px;
+        object-position: 50% 20%;
+    }
+
+    .miniActivity {
+        margin-bottom: 20px;
+    }
+
+    .imgMaxActivity {
+        width: 100%;
+        height: 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .imgActivity {
+        width: 100%;
+        height: 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*fixer footer en column*/
+    .bottomPage {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .bottomPage p {
+        font-size: 1.4em;
+    }
+
+    .bottomPage h2 {
+        font-size: 1.6em;
+    }
+    .bottom__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+
+    .propos {
+        position: relative;
+        right: 0px;
+        margin-left: 2%;
+        font-weight: 500;
+    }
+}
+
+
+/*Format tablette*/
+@media (min-width: 768px) and (max-width: 990px) {
+    * {}
+
+    /*On modifie la taille et l'emplacement de l'image BOOKI*/
+    .booki {
+        margin-bottom: 40px;
+        position: relative;
+        left: 33%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1%;
+        padding-bottom: 1%;
+    }
+
+    .interlink {
+        position: relative;
+        display: flex;
+        width: 110%;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        border-bottom: 4px #F2F2F2 solid;
+        font-size: 1em;
+    }
+
+    .interlink a {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+
+    .interlink :hover {
+        position: relative;
+        bottom: 0%;
+        padding-top: 0px;
+        border-top: none;
+        padding-bottom: 20px;
+        margin-bottom: -24px;
+        border-bottom: 4px #0065FC solid;
+        text-align: center;
+        color: #0065FC;
+    }
+
+    form {
+        margin: 5%;
+        margin-left: 20%;
+    }
+
+    .filter {
+        text-align: left;
+    }
+
+    .buttonFilter {
+        margin-left: 0%;
+        margin-right: 50%;
+        margin-bottom: 2%;
+        font-size: 1.2rem;
+    }
+
+    .fa-info {
+        width: 15px;
+        height: 15px;
+    }
+
+    .mainLocation {
+        position: relative;
+        left: -6%;
+        min-width: 109.5%;
+        border-radius: 0% 0% 0% 0%;
+    }
+
+    .containerPopularLocation {
+        min-width: 100%;
+        background-color: white;
+    }
+
+    span .fa-star {
+        position: relative;
+        left: 25%;
+    }
+
+    .boxPopularLocation {
+        margin-bottom: 20px;
+    }
+    .containerPopularLocation span {
+        position: relative;
+        top: 25px;
+        right: 10px;
+    }
+
+    .boxLocation {
+        width: 45%;
+    }
+
+    .infoPopularLocation {
+        margin-left: 5%;
+    }
+
+
+    .boxMaxiActivity {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .miniActivity--little img {
+        height: 170px;
+    }
+    .miniActivity img {
+        height: 170px;
+    }
+
+    .maxiActivity {
+        width: 45%;
+    }
+
+    .imgMaxActivity {
+        width: 100%;
+    }
+
+    .boxMiniActivity {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .miniActivity {
+        width: 100%;
+    }
+    
+
+    .imgActivity {
+        width: 100%;
+    }
+
+
+    .bottomPage {
+        flex-direction: column;
+
+    }
+    .bottom__container {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 2%;
+        margin-left: auto;
+        margin-right: auto;  
+
+    }
+}
+
+/*Format très grand ecran*/
+@media (min-width: 1200px) {
+    .conteneur {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bottom__container {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+}
