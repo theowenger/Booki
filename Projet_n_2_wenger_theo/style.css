@@ -970,7 +970,6 @@ span .fa-star {
 
 /*Format tablette*/
 @media (min-width: 768px) and (max-width: 990px) {
-    * {}
 
     /*On modifie la taille et l'emplacement de l'image BOOKI*/
     .booki {
