@@ -1,3 +1,5 @@
+/*Police Raleway*/
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 
@@ -11,6 +13,7 @@ body {
     overflow-x: hidden;
     margin-left: 0%;
     margin-right: 0%;
+    margin-bottom: 0%;
 }
 
 a {
@@ -179,7 +182,7 @@ button .fa-magnifying-glass {
 
 .fa-info {
     position: relative;
-    top: 8px;
+    top: 6px;
     padding: 8px;
     margin-right: 15px;
     border: 1px lightgrey solid;
@@ -359,14 +362,14 @@ button .fa-magnifying-glass {
 
 .miniActivity {
 
-    padding-bottom: 2%;
+    padding-bottom: 0.3%;
     border: 0px #F2F2F2 solid;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 2px 2px 5px lightgray;
 }
 
 .miniActivity--little {
-    padding-bottom: 2%;
+    padding-bottom: 0.4%;
     border: 0px #F2F2F2 solid;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 2px 2px 5px lightgray;
@@ -757,13 +760,15 @@ span .fa-star {
     }
 
     .fa-info {
+        position: relative;
+        top: 11px;
         padding: 8px;
         margin-right: 15px;
         border: 1px lightgrey solid;
         border-radius: 50% 50% 50% 50%;
         width: 10px;
         height: 10px;
-        line-height: 60%;
+        line-height: 70%;
         text-align: center;
         color: #0065FC;
     }
@@ -846,7 +851,7 @@ span .fa-star {
     }
 
     .boxPopularLocation {
-        height: 130px;
+        height: 124px;
         margin-right: 5%;
         margin-bottom: 12px;
         padding-bottom: 2%;
@@ -858,7 +863,7 @@ span .fa-star {
 
     .imgPopularLocation {
         width: 100%;
-        height: 130px;
+        height: 102%;
     }
 
     .infoPopularLocation {
@@ -1027,6 +1032,8 @@ span .fa-star {
     }
 
     .fa-info {
+        position: relative;
+        top: 15px;
         width: 15px;
         height: 15px;
     }
